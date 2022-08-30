@@ -15,6 +15,9 @@ Ext.define('webapp.Application', {
         }
     },
 
+    launch: function (){
+        Ext.widget("login");
+    },
     onAppUpdate: function () {
         Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
             function (choice) {
